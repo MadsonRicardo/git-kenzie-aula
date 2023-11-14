@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <section>
+            <div>
+                <label for="nome">Nome</label> <br>
+                <input type="text" placeholder="Insira seu nome aqui" id="nome" required>
+            </div> <br>
+            <div>  
+                <label for="email">Email</label> <br>
+                <input type="text" placeholder="Insira seu email aqui" id="email" required>
+            </div> <br>
+            <div>
+                <label for="mensagem">O que te motivou participar do evento?</label> 
+                <br>
+                <textarea placeholder="Descreva aqui" id="mensagem" required></textarea>
+            </div> <br>
+            <div>
+            <label for="modulo">Selecione seu módulo</label> <br> 
+            <select name="modulo" id="modulo" required>
+                <option value="">Escolher módulo</option>
+                <option value="">Grátis</option>
+                <option value="">Básico</option>
+                <option value="">Premium</option>
+            </select>
+            </div> <br>
+            <div>
+                <label for="senha">Cadastre sua senha</label> <br>
+                <input type="password" id="senha" placeholder="Digite sua senha aqui" required value="senha">
+            </div> <br>
+            <div>
+                <label for="confirmarSenha">Confirme a senha</label> <br>
+                <input type="password" id="confirmarSenha" placeholder="Repita a senha" required value="confirmarSenha">
+            </div> <br>
+            <div>
+                <p>Deseja receber novidades em seu email?</p>
+                <label for="novidadeSim">Sim</label>
+                <input type="radio" required name="input" id="novidadeSim" value="sim">
+                <label for="novidadeNao">Não</label>
+                <input type="radio" required name="input" id="novidadeNao" value="nao">
+            </div> <br>
+            <button type="submit">Cadastrar</button>
+    </section>
+    </form>
+</body>
+</html>
